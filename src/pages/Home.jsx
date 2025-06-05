@@ -1,13 +1,18 @@
 import React from "react";
 import ServicePreview from "../components/ServicesPreview";
-
-import importImg from "../assets/images/3d-render-d-un-parc-de-vehicules-de-livraison.jpg";
 import shippingPlanes from "../assets/images/shippingPlanes.jpg";
+
 import { motion } from "framer-motion";
+import MissionVisionSection from "../components/MissionVisionSection";
+import WeImport from "../components/WeImport";
+import WhyChooseUs from "../components/WhyCooseUs";
+
 
 export default function Home() {
+
+
   return (
-    <div className="space-y-16">
+    <div className="space-y-16 ">
       {/* About Section */}
       <motion.section
         id="about"
@@ -45,130 +50,26 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
-
-      {/* Mission & Vision */}
-      <motion.section
-        className="w-full py-20 bg-gray"
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-      >
-        <div className="w-full px-4 md:px-8 lg:px-12 text-gray-900 text-center">
-          <h2 className="text-3xl font-bold mb-10">
-            Mission & Vision Statement
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <motion.div
-              className="bg-gray-50 text-gray-800 rounded-lg shadow-md p-6"
-              whileHover={{ scale: 1.03 }}
-            >
-              <h3 className="text-xl font-semibold text-blue-800 mb-3">
-                Our Mission
-              </h3>
-              <p className="text-justify leading-relaxed">
-                Our mission is to deliver exceptional service, build
-                long-lasting relationships, and consistently exceed our clients'
-                expectations through efficient, reliable, and cost-effective
-                logistics solutions.
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="bg-gray-50 text-gray-800 rounded-lg shadow-md p-6"
-              whileHover={{ scale: 1.03 }}
-            >
-              <h3 className="text-xl font-semibold text-blue-800 mb-3">
-                Our Vision
-              </h3>
-              <p className="text-justify leading-relaxed">
-                To be the leading global shipping and logistics provider,
-                renowned for exceptional service, reliability, and innovation,
-                while fostering sustainable growth, customer satisfaction, and
-                employee excellence.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
+      <div id="services" className="-mt-16"></div>
+      <MissionVisionSection />
       {/* Services Section */}
       <div id="services" className="-mt-16">
         <ServicePreview />
       </div>
-
+<div className="-mt-16"></div>
       {/* Import Section */}
-      <motion.section
-        className="w-full py-20 bg-white"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9 }}
-        viewport={{ once: true }}
-      >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
-          <div className="w-full">
-            <img
-              src={importImg}
-              alt="Imported Vehicles"
-              className="w-full h-auto rounded-xl shadow-md object-cover"
-            />
-          </div>
+      <div className="w-full -mt-23">
+        <WeImport />
+      </div>
 
-          <div className="text-gray-900">
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight mb-4">
-              Efficient. Reliable. Global.
-            </h2>
-            <p className="text-lg leading-relaxed mb-4">
-              We specialize in seamless customs clearing and forwarding for
-              automobiles, heavy machinery, and other import categories. Whether
-              it's one vehicle or an entire fleet, we handle the process with
-              care and precision.
-            </p>
-            <p className="text-base leading-relaxed">
-              With years of experience in the logistics industry, our team
-              guarantees safe, timely, and efficient delivery of your imports
-              from any global port.
-            </p>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Why Choose Us */}
-      <motion.section
-        className="w-full bg-white py-20 px-6"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-      >
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">
-            Why Choose Ter Maximum Ltd?
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {["Experience", "Expertise", "Flexibility", "Reliability", "Strategic Location", "Customer Focus"].map((item, index) => (
-              <motion.div
-                key={index}
-                className="bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-lg transition"
-                whileHover={{ scale: 1.02 }}
-              >
-                <h3 className="text-xl font-semibold text-blue-800 mb-2">
-                  {item}
-                </h3>
-                <p className="text-gray-700 text-justify">
-                  Description for {item} goes here.
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
+      <div className="-mt-23">
+        <WhyChooseUs />
+      </div>
+<div className="w-full -mt-23"></div>
       {/* Contact Section */}
       <motion.section
         id="contact"
-        className="w-full bg-gray-100 py-20 px-6"
+        className="w-full bg-gray-50 py-20 px-6"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
@@ -222,11 +123,11 @@ export default function Home() {
           </form>
         </div>
       </motion.section>
-
+<div className="w-full -mt-23"></div>
       {/* Map Section */}
       <motion.section
         id="map"
-        className="w-full py-10 px-6 bg-white"
+        className="w-full py-10 px-6 bg-gray-50"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
@@ -250,6 +151,7 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+      <div className="w-full -mt-20"></div>
     </div>
   );
 }
