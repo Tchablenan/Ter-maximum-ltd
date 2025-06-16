@@ -121,8 +121,9 @@
     }
  
   },
-   "ourTeam": {
-    "title": "Our Team"
+    "ourTeam": {
+      "title": "Our Team"
+    }
   },
   "team": {
     "selma": {
@@ -134,7 +135,7 @@
     "stella": {
       "role": "Field Agent"
     }
-  }
+  
   
   },
   "MissionVisionSection": {

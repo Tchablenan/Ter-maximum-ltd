@@ -55,7 +55,7 @@ export default function TeamSlider() {
                   className="w-36 h-36 object-cover rounded-full mb-4 shadow-md"
                 />
                 <h3 className="text-lg font-semibold text-gray-800">{name}</h3>
-                <p className="text-sm text-gray-600">{t(roleKey)}</p>
+                <p className="text-sm text-gray-600">{t(roleKey)}</p> {/* Affichage du rôle traduit */}
               </motion.div>
             </SwiperSlide>
           ))}
