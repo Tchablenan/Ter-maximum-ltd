@@ -1,14 +1,17 @@
 import React from "react";
 import ServicePreview from "../components/ServicesPreview";
 import shippingPlanes from "../assets/images/shippingPlanes.jpg";
-
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import MissionVisionSection from "../components/MissionVisionSection";
 import WeImport from "../components/WeImport";
 import WhyChooseUs from "../components/WhyCooseUs";
 import Team from "../components/Team";
 
+
+
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <div className="space-y-16 ">
       {/* About Section */}
@@ -31,27 +34,21 @@ export default function Home() {
 
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-              About Ter Maximum Ltd
+              {t("home.about.title")}
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-4 text-justify">
-              Ter Maximum Ltd is a logistics and supply chain company based in
-              Tema, Ghana. We provide global shipping, import/export services,
-              and general goods handling with a commitment to reliability,
-              efficiency, and customer satisfaction.
+              {t("home.about.p1")}
             </p>
             <p className="text-gray-700 text-base leading-relaxed text-justify">
-              With our expert team and strategic location near the port, we are
-              your trusted partner for all things logistics. Our solutions are
-              designed to optimize your operations and deliver results—locally
-              and internationally.
+              {t("home.about.p2")}
             </p>
           </div>
         </div>
       </motion.section>
-      <div id="services" className="-mt-16"></div>
+      <div id="services" className="-mt-25"></div>
       <MissionVisionSection />
       {/* Services Section */}
-      <div id="services" className="-mt-16">
+      <div id="services" className="-mt-32">
         <ServicePreview />
       </div>
       <div className="-mt-16"></div>
@@ -64,7 +61,7 @@ export default function Home() {
         <WhyChooseUs />
       </div>
       {/* Team Section */}
-      <div className="w-full -mt-23">
+      <div className="w-full -mt-32">
         <Team />
       </div>
       {/* Contact Section */}
@@ -80,7 +77,7 @@ export default function Home() {
       >
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-blue-900 text-center mb-10">
-            Contact Us
+             {t("home.contact.title")}
           </h2>
 
           <form
@@ -92,14 +89,14 @@ export default function Home() {
               <input
                 type="text"
                 name="name"
-                placeholder="Full Name"
+                placeholder={t("home.contact.name")}
                 required
                 className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="email"
                 name="email"
-                placeholder="Email Address"
+                placeholder={t("home.contact.email")}
                 required
                 className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
@@ -107,12 +104,12 @@ export default function Home() {
             <input
               type="text"
               name="subject"
-              placeholder="Subject"
+              placeholder={t("home.contact.subject")}
               className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <textarea
               name="message"
-              placeholder="Your Message"
+              placeholder={t("home.contact.message")}
               rows="5"
               required
               className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -121,7 +118,7 @@ export default function Home() {
               type="submit"
               className="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800 transition"
             >
-              Send Message
+                        {t("home.contact.send")}
             </button>
           </form>
         </div>
@@ -138,7 +135,7 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-6">
-            Find Us on the Map
+            {t("home.map.title")}
           </h2>
           <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
             <iframe

@@ -1,10 +1,12 @@
 import { motion, useInView } from "framer-motion";
 import { FaBullseye, FaEye } from "react-icons/fa";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function MissionVisionSection() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
+  const { t } = useTranslation();
 
   return (
     <section
@@ -21,14 +23,7 @@ export default function MissionVisionSection() {
       />
 
       <div className="relative w-full px-4 md:px-8 lg:px-12 text-gray-900 text-center z-10">
-        <motion.h2
-          className="text-3xl font-bold mb-10"
-          initial={{ opacity: 0, y: -30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
-        >
-          Mission & Vision Statement
-        </motion.h2>
+        
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Mission */}
@@ -54,11 +49,9 @@ export default function MissionVisionSection() {
                 <FaBullseye />
               </motion.div>
             </div>
-            <h3 className="text-xl font-semibold text-blue-800 mb-3">Our Mission</h3>
+            <h3 className="text-xl font-semibold text-blue-800 mb-3">{t("MissionVisionSection.mission.title")}</h3>
             <p className="text-justify leading-relaxed">
-              Our mission is to deliver exceptional service, build long-lasting relationships,
-              and consistently exceed our clients' expectations through efficient, reliable,
-              and cost-effective logistics solutions.
+              {t("MissionVisionSection.mission.description")}
             </p>
           </motion.div>
 
@@ -85,11 +78,9 @@ export default function MissionVisionSection() {
                 <FaEye />
               </motion.div>
             </div>
-            <h3 className="text-xl font-semibold text-blue-800 mb-3">Our Vision</h3>
+            <h3 className="text-xl font-semibold text-blue-800 mb-3">{t("MissionVisionSection.vision.title")}</h3>
             <p className="text-justify leading-relaxed">
-              To be the leading global shipping and logistics provider, renowned for exceptional service,
-              reliability, and innovation, while fostering sustainable growth, customer satisfaction,
-              and employee excellence.
+              {t("MissionVisionSection.vision.description")}
             </p>
           </motion.div>
         </div>

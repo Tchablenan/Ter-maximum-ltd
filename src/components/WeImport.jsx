@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import img1 from "../assets/images/14967.jpg";
 import img2 from "../assets/images/containersPort.jpg";
 import img3 from "../assets/images/hero.jpg";
@@ -8,6 +9,7 @@ const images = [img1, img2, img3];
 
 export default function ImportSection() {
   const [index, setIndex] = useState(0);
+  const { t } = useTranslation();
 
   // Défilement automatique
   useEffect(() => {
@@ -81,18 +83,13 @@ export default function ImportSection() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Efficient. Reliable. Global.
+            {t("home.weImport.title")}
           </motion.h2>
           <p className="text-lg leading-relaxed mb-4">
-            We specialize in seamless customs clearing and forwarding for
-            automobiles, heavy machinery, and other import categories. Whether
-            it's one vehicle or an entire fleet, we handle the process with
-            care and precision.
+            {t("home.weImport.p1")}
           </p>
           <p className="text-base leading-relaxed">
-            With years of experience in the logistics industry, our team
-            guarantees safe, timely, and efficient delivery of your imports
-            from any global port.
+            {t("home.weImport.p2")}
           </p>
         </div>
       </div>

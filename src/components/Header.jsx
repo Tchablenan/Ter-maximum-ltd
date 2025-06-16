@@ -5,28 +5,32 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import { useTranslation } from "react-i18next";
+
+// Import des images
 import welcomeImg from "../assets/images/logistique.jpg";
 import importImg from "../assets/images/containersPort.jpg";
 import contactImg from "../assets/images/sourire-adolescent-tenant-des-boites-en-carton.jpg";
 
 export default function Header() {
+  const { t } = useTranslation();
+
+  // Définir les slides
   const slides = [
     {
       image: welcomeImg,
-      title: "Welcome to Ter Maximum Ltd",
-      subtitle:
-        "We are a leading logistics and supply chain management company based in Tema, Ghana. We specialize in shipping, import/export, and general goods handling — providing efficient, reliable, and customized solutions for global trade.",
+      title: t("header.welcomeTitle"), // Texte traduit
+      subtitle: t("header.welcomeSubtitle"), // Texte traduit
     },
     {
       image: importImg,
-      title: "We Import Automobiles & Machinery",
-      subtitle:
-        "We handle the seamless importation of vehicles, equipment and heavy-duty machinery with speed, care and professionalism.",
+      title: t("header.importTitle"), // Texte traduit
+      subtitle: t("header.importSubtitle"), // Texte traduit
     },
     {
       image: contactImg,
-      title: "Let’s Work Together",
-      subtitle: "Have a question or need a custom quote?",
+      title: t("header.contactTitle"), // Texte traduit
+      subtitle: t("header.contactSubtitle"), // Texte traduit
       cta: true,
     },
   ];
@@ -61,7 +65,7 @@ export default function Header() {
                     href="#contact"
                     className="inline-block mt-6 px-6 py-3 bg-blue-900 hover:bg-blue-800 transition text-white rounded shadow"
                   >
-                    Contact us
+                    {t("header.contactButton")} {/* Traduction du bouton */}
                   </a>
                 )}
               </div>

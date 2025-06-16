@@ -1,39 +1,40 @@
 import { FaRegCheckCircle, FaMapMarkerAlt, FaPeopleCarry, FaHandsHelping, FaClock, FaBoxes } from "react-icons/fa";
 import { motion } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 export default function WhyChooseUs() {
-    const benefits = [
-  {
-    icon: <FaRegCheckCircle className="text-blue-800 text-3xl mb-4" />,
-    title: "Experience",
-    description: "Proven track record in logistics and supply chain management across multiple sectors.",
-  },
-  {
-    icon: <FaPeopleCarry className="text-blue-800 text-3xl mb-4" />,
-    title: "Expertise",
-    description: "A knowledgeable and dedicated team ensuring the best service quality for every client.",
-  },
-  {
-    icon: <FaBoxes className="text-blue-800 text-3xl mb-4" />,
-    title: "Flexibility",
-    description: "Tailored logistics solutions designed to meet your specific business needs and goals.",
-  },
-  {
-    icon: <FaClock className="text-blue-800 text-3xl mb-4" />,
-    title: "Reliability",
-    description: "Timely, secure and traceable delivery processes that give you peace of mind.",
-  },
-  {
-    icon: <FaMapMarkerAlt className="text-blue-800 text-3xl mb-4" />,
-    title: "Strategic Location",
-    description: "Located near Tema Port, we reduce delays and cut logistics costs significantly.",
-  },
-  {
-    icon: <FaHandsHelping className="text-blue-800 text-3xl mb-4" />,
-    title: "Customer Focus",
-    description: "Our services are built around your satisfaction, ensuring consistent quality at every step.",
-  },
-];
+  const { t } = useTranslation();
+  const benefits = [
+    {
+      icon: <FaRegCheckCircle className="text-blue-800 text-3xl mb-4" />,
+      title: t("home.whyChooseUs.benefits.experience.title"),
+      description: t("home.whyChooseUs.benefits.experience.description"),
+    },
+    {
+      icon: <FaPeopleCarry className="text-blue-800 text-3xl mb-4" />,
+      title: t("home.whyChooseUs.benefits.expertise.title"),
+      description: t("home.whyChooseUs.benefits.expertise.description"),
+    },
+    {
+      icon: <FaBoxes className="text-blue-800 text-3xl mb-4" />,
+      title: t("home.whyChooseUs.benefits.flexibility.title"),
+      description: t("home.whyChooseUs.benefits.flexibility.description"),
+    },
+    {
+      icon: <FaClock className="text-blue-800 text-3xl mb-4" />,
+      title: t("home.whyChooseUs.benefits.reliability.title"),
+      description: t("home.whyChooseUs.benefits.reliability.description"),
+    },
+    {
+      icon: <FaMapMarkerAlt className="text-blue-800 text-3xl mb-4" />,
+      title: t("home.whyChooseUs.benefits.strategicLocation.title"),
+      description: t("home.whyChooseUs.benefits.strategicLocation.description"),
+    },
+    {
+      icon: <FaHandsHelping className="text-blue-800 text-3xl mb-4" />,
+      title: t("home.whyChooseUs.benefits.customerFocus.title"),
+      description: t("home.whyChooseUs.benefits.customerFocus.description"),
+    },
+  ];
     return (
     
 
@@ -46,7 +47,7 @@ export default function WhyChooseUs() {
 >
   <div className="max-w-7xl mx-auto">
     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">
-      Why Choose Ter Maximum Ltd?
+        {t("home.whyChooseUs.title")}
     </h2>
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

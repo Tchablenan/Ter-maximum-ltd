@@ -10,64 +10,55 @@ import {
   FaUsers,
   FaBalanceScale
 } from "react-icons/fa";
-
-const services = [
-  {
-    title: "Shipping",
-    icon: <FaShippingFast className="text-blue-800 text-3xl mb-3" />,
-    description:
-      "We provide ocean freight, air freight, and land transportation services tailored to your logistics needs.",
-  },
-  {
-    title: "Import & Export",
-    icon: <FaExchangeAlt className="text-blue-800 text-3xl mb-3" />,
-    description:
-      "Customs clearance, cargo insurance, and freight forwarding handled with compliance and efficiency.",
-  },
-  {
-    title: "General Goods",
-    icon: <FaBoxes className="text-blue-800 text-3xl mb-3" />,
-    description:
-      "Procurement, secure storage, and distribution of general goods across multiple sectors.",
-  },
-];
-
-const values = [
-  {
-    title: "Integrity",
-    icon: <FaBalanceScale className="text-blue-800 text-2xl mb-2" />,
-    description: "We operate with transparency and honesty.",
-  },
-  {
-    title: "Customer Focus",
-    icon: <FaUserCheck className="text-blue-800 text-2xl mb-2" />,
-    description: "We prioritize our clients' needs and satisfaction.",
-  },
-  {
-    title: "Innovation",
-    icon: <FaLightbulb className="text-blue-800 text-2xl mb-2" />,
-    description: "We continuously improve our processes and services.",
-  },
-  {
-    title: "Teamwork",
-    icon: <FaUsers className="text-blue-800 text-2xl mb-2" />,
-    description: "We collaborate to achieve common goals.",
-  },
-];
+import { useTranslation } from "react-i18next"; // Importation de useTranslation pour la traduction
 
 export default function ServicePreview() {
+  const { t } = useTranslation(); // Récupérer la fonction de traduction
+
+  const services = [
+    {
+      key: "shipping", // Clé pour la traduction
+      icon: <FaShippingFast className="text-blue-800 text-3xl mb-3" />,
+      description: "We provide ocean freight, air freight, and land transportation services tailored to your logistics needs.",
+    },
+    {
+      key: "importExport", // Clé pour la traduction
+      icon: <FaExchangeAlt className="text-blue-800 text-3xl mb-3" />,
+      description: "Customs clearance, cargo insurance, and freight forwarding handled with compliance and efficiency.",
+    },
+    {
+      key: "generalGoods", // Clé pour la traduction
+      icon: <FaBoxes className="text-blue-800 text-3xl mb-3" />,
+      description: "Procurement, secure storage, and distribution of general goods across multiple sectors.",
+    },
+  ];
+
+  const values = [
+    {
+      key: "integrity", // Clé pour la traduction
+      icon: <FaBalanceScale className="text-blue-800 text-2xl mb-2" />,
+      description: "We operate with transparency and honesty.",
+    },
+    {
+      key: "customerFocus", // Clé pour la traduction
+      icon: <FaUserCheck className="text-blue-800 text-2xl mb-2" />,
+      description: "We prioritize our clients' needs and satisfaction.",
+    },
+    {
+      key: "innovation", // Clé pour la traduction
+      icon: <FaLightbulb className="text-blue-800 text-2xl mb-2" />,
+      description: "We continuously improve our processes and services.",
+    },
+    {
+      key: "teamwork", // Clé pour la traduction
+      icon: <FaUsers className="text-blue-800 text-2xl mb-2" />,
+      description: "We collaborate to achieve common goals.",
+    },
+  ];
+
   return (
     <section className="w-full py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-gray-900">
-        <motion.h2
-          className="text-4xl font-bold text-center mb-16"
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          What We Do & What We Stand For
-        </motion.h2>
 
         {/* SERVICES */}
         <motion.div
@@ -78,18 +69,22 @@ export default function ServicePreview() {
           className="mb-20"
         >
           <h3 className="text-2xl font-semibold text-blue-800 mb-8 text-center">
-            Our Services
+            {t("home.services.title")} {/* Traduction du titre des services */}
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
-            {services.map(({ title, description, icon }) => (
+            {services.map(({ key, description, icon }) => (
               <motion.div
-                key={title}
+                key={key}
                 className="bg-white border border-gray-200 text-gray-800 rounded-xl shadow-md p-6 text-center hover:shadow-lg transition"
                 whileHover={{ scale: 1.03 }}
               >
                 {icon}
-                <h4 className="text-lg font-semibold text-blue-800 mb-2">{title}</h4>
-                <p className="text-sm leading-relaxed text-justify">{description}</p>
+                <h4 className="text-lg font-semibold text-blue-800 mb-2">
+                  {t(`home.services.${key}.title`)} {/* Traduction dynamique du titre de chaque service */}
+                </h4>
+                <p className="text-sm leading-relaxed text-justify">
+                  {t(`home.services.${key}.description`)} {/* Traduction dynamique de la description */}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -103,18 +98,22 @@ export default function ServicePreview() {
           viewport={{ once: true }}
         >
           <h3 className="text-2xl font-semibold text-blue-800 mb-8 text-center">
-            Our Core Values
+            {t("home.values.title")} {/* Traduction dynamique du titre des valeurs */}
           </h3>
           <div className="grid md:grid-cols-4 gap-6">
-            {values.map(({ title, description, icon }) => (
+            {values.map(({ key, description, icon }) => (
               <motion.div
-                key={title}
+                key={key}
                 className="bg-white border border-gray-200 text-gray-800 rounded-xl shadow-md p-5 hover:shadow-lg transition text-center"
                 whileHover={{ scale: 1.04 }}
               >
                 {icon}
-                <h4 className="text-lg font-semibold text-blue-800 mb-2">{title}</h4>
-                <p className="text-sm leading-relaxed">{description}</p>
+                <h4 className="text-lg font-semibold text-blue-800 mb-2">
+                  {t(`home.values.${key}.title`)} {/* Traduction dynamique du titre de chaque valeur */}
+                </h4>
+                <p className="text-sm leading-relaxed">
+                  {t(`home.values.${key}.description`)} {/* Traduction dynamique de la description de chaque valeur */}
+                </p>
               </motion.div>
             ))}
           </div>

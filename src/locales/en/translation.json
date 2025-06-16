@@ -1,0 +1,153 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+
+  "header": {
+    "welcomeTitle": "Welcome to Ter Maximum Ltd",
+    "welcomeSubtitle": "We are a leading logistics and supply chain management company based in Tema, Ghana. We specialize in shipping, import/export, and general goods handling — providing efficient, reliable, and customized solutions for global trade.",
+    "importTitle": "We Import Automobiles & Machinery",
+    "importSubtitle": "We handle the seamless importation of vehicles, equipment and heavy-duty machinery with speed, care and professionalism.",
+    "contactTitle": "Let’s Work Together",
+    "contactSubtitle": "Have a question or need a custom quote?",
+    "contactButton": "Contact us"
+  },
+
+  "footer": {
+    "description": "Logistics & Supply Chain company based in Tema, Ghana. We specialize in shipping, import/export, and general goods handling.",
+    "quickLinks": "Quick Links",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "location": "Location",
+    "contactInfo": "Contact Info",
+    "addressTitle": "Address",
+    "emailTitle": "Email",
+    "phoneTitle": "Phone",
+    "allRightsReserved": "All rights reserved."
+  },
+
+  "home": {
+    "about": {
+      "title": "About Ter Maximum Ltd",
+      "p1": "Ter Maximum Ltd is a logistics and supply chain management company based in Tema, Ghana. We specialize in providing comprehensive solutions to meet the needs of our clients in the maritime and logistics sectors.",
+      "p2": "With our experienced team and strategic location near the port, we are well-equipped to handle a wide range of logistics challenges. Our services include freight forwarding, customs clearance, warehousing, and distribution, ensuring that your goods are managed efficiently from origin to destination."
+  
+    },
+    
+
+    "contact": {
+      "title": "Contact Us",
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "map": {
+      "title": "Find Us on the Map"
+    },
+
+    "services": {
+      "title": "Our Services",
+      "shipping": {
+        "title": "Shipping",
+        "description": "We provide ocean freight, air freight, and land transportation services tailored to your logistics needs."
+      },
+      "importExport": {
+        "title": "Import & Export",
+        "description": "Customs clearance, cargo insurance, and freight forwarding handled with compliance and efficiency."
+      },
+      "generalGoods": {
+        "title": "General Goods",
+        "description": "Procurement, secure storage, and distribution of general goods across multiple sectors."
+      }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "integrity": {
+        "title": "Integrity",
+        "description": "We operate with transparency and honesty."
+      },
+      "customerFocus": {
+        "title": "Customer Focus",
+        "description": "We prioritize our clients' needs and satisfaction."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We continuously improve our processes and services."
+      },
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "We collaborate to achieve common goals."
+      }
+    },
+  "weImport": {
+    "title": "Efficient. Reliable. Global.",
+    "p1": "We specialize in seamless customs clearing and forwarding for automobiles, heavy machinery, and other import categories. Whether it's one vehicle or an entire fleet, we handle the process with care and precision.",
+    "p2": "With years of experience in the logistics industry, our team guarantees safe, timely, and efficient delivery of your imports from any global port."
+  },
+
+  "whyChooseUs": {
+    "title": "Why Choose Ter Maximum Ltd?",
+    "benefits": {
+      "experience": {
+        "title": "Experience",
+        "description": "Proven track record in logistics and supply chain management across multiple sectors."
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "A knowledgeable and dedicated team ensuring the best service quality for every client."
+      },
+      "flexibility": {
+        "title": "Flexibility",
+        "description": "Tailored logistics solutions designed to meet your specific business needs and goals."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "Timely, secure and traceable delivery processes that give you peace of mind."
+      },
+      "strategicLocation": {
+        "title": "Strategic Location",
+        "description": "Located near Tema Port, we reduce delays and cut logistics costs significantly."
+      },
+      "customerFocus": {
+        "title": "Customer Focus",
+        "description": "Our services are built around your satisfaction, ensuring consistent quality at every step."
+      }
+    }
+ 
+  },
+   "ourTeam": {
+    "title": "Our Team"
+  },
+  "team": {
+    "selma": {
+      "role": "Marketing And Business Development"
+    },
+    "isaac": {
+      "role": "Operations Assistant"
+    },
+    "stella": {
+      "role": "Field Agent"
+    }
+  }
+  
+  },
+  "MissionVisionSection": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "Our mission is to provide exceptional service, build lasting relationships, and consistently exceed our clients' expectations through efficient, reliable, and cost-effective logistics solutions."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the leading global provider of shipping and logistics services, recognized for exceptional service, reliability, and continuous innovation while fostering sustainable growth, customer satisfaction, and employee excellence."
+      }
+    }
+
+
+
+}

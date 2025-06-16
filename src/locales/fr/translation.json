@@ -1,0 +1,149 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact"
+  },
+    "header": {
+    "welcomeTitle": "Bienvenue chez Ter Maximum Ltd",
+    "welcomeSubtitle": "Nous sommes une entreprise de logistique et de gestion de chaîne d'approvisionnement basée à Tema, Ghana. Nous nous spécialisons dans l'expédition, l'importation/exportation, et la gestion générale des marchandises — offrant des solutions efficaces, fiables et personnalisées pour le commerce mondial.",
+    "importTitle": "importation des automobiles & machines",
+    "importSubtitle": "Nous gérons l'importation transparente de véhicules, d'équipements et de machineries lourdes avec rapidité, soin et professionnalisme.",
+    "contactTitle": "Travaillons ensemble",
+    "contactSubtitle": "Vous avez une question ou besoin d'un devis personnalisé ?",
+    "contactButton": "Contactez-nous"
+  },
+    "footer": {
+    "description": "Entreprise de logistique et de chaîne d'approvisionnement basée à Tema, Ghana. Nous nous spécialisons dans l'expédition, l'import/export, et la gestion générale des marchandises.",
+    "quickLinks": "Liens rapides",
+    "about": "À propos de nous",
+    "services": "Services",
+    "contact": "Contact",
+    "location": "Emplacement",
+    "contactInfo": "Informations de contact",
+    "addressTitle": "Adresse",
+    "emailTitle": "Email",
+    "phoneTitle": "Téléphone",
+    "allRightsReserved": "Tous droits réservés."
+  },
+
+  "home": {
+    "about": {
+      "title": "À propos de nous",
+      "p1": "Ter Maximum Ltd est une société de logistique et de gestion de la chaîne d'approvisionnement basée à Tema, au Ghana. Nous nous spécialisons dans la fourniture de solutions complètes pour répondre aux besoins de nos clients dans les secteurs maritimes et logistiques.",
+      "p2": "Avec notre équipe expérimentée et notre emplacement stratégique près du port, nous sommes bien équipés pour relever une large gamme de défis logistiques. Nos services incluent l'expédition, le dédouanement, l'entreposage et la distribution, garantissant que vos marchandises sont gérées efficacement depuis leur origine jusqu'à leur destination."
+    },
+
+
+
+    "contact": {
+      "title": "Contactez-nous",
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "send": "Envoyer le Message"
+    },
+    "map": {
+      "title": "Localisation"
+    },
+    "services": {
+      "title": "Nos Services",
+      "shipping": {
+        "title": "Expédition",
+        "description": "Nous proposons des services de fret maritime, aérien et terrestre adaptés à vos besoins logistiques."
+      },
+      "importExport": {
+        "title": "Importation & Exportation",
+        "description": "Le dédouanement, l'assurance des marchandises et le transport de fret sont effectués dans le respect des normes et de manière efficace."
+      },
+      "generalGoods": {
+        "title": "Marchandises Générales",
+        "description": "Approvisionnement, stockage sécurisé et distribution de marchandises générales dans divers secteurs."
+      }
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "integrity": {
+        "title": "Intégrité",
+        "description": "Nous opérons avec transparence et honnêteté."
+      },
+      "customerFocus": {
+        "title": "Orientation Client",
+        "description": "Nous privilégions les besoins et la satisfaction de nos clients."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Nous améliorons continuellement nos processus et nos services."
+      },
+      "teamwork": {
+        "title": "Travail d'Équipe",
+        "description": "Nous collaborons pour atteindre des objectifs communs."
+      }
+    },
+
+  "weImport": {
+    "title": "Efficace, Fiable, Global",
+    "p1": "Nous nous spécialisons dans le dédouanement et le transport sans faille pour les automobiles, les machines lourdes et autres catégories d'importation. Que ce soit un véhicule ou une flotte entière, nous gérons le processus avec soin et précision.",
+    "p2": "Fort de plusieurs années d'expérience dans le secteur de la logistique, notre équipe garantit une livraison sûre, rapide et efficace de vos importations depuis n'importe quel port mondial."
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi Choisir Ter Maximum Ltd ?",
+    "benefits": {
+      "experience": {
+        "title": "Expérience",
+        "description": "Un historique éprouvé dans la gestion de la logistique et de la chaîne d'approvisionnement à travers plusieurs secteurs."
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "Une équipe compétente et dévouée assurant la meilleure qualité de service pour chaque client."
+      },
+      "flexibility": {
+        "title": "Flexibilité",
+        "description": "Des solutions logistiques sur mesure conçues pour répondre aux besoins et objectifs spécifiques de votre entreprise."
+      },
+      "reliability": {
+        "title": "Fiabilité",
+        "description": "Des processus de livraison ponctuels, sécurisés et traçables qui vous apportent la tranquillité d'esprit."
+      },
+      "strategicLocation": {
+        "title": "Emplacement Stratégique",
+        "description": "Situés près du port de Tema, nous réduisons les retards et réduisons considérablement les coûts logistiques."
+      },
+      "customerFocus": {
+        "title": "Orientation Client",
+        "description": "Nos services sont construits autour de votre satisfaction, garantissant une qualité constante à chaque étape."
+      }
+    }
+
+  }
+
+  },
+  "ourTeam": {
+    "title": "Notre Équipe"
+  },
+  "team": {
+    "selma": {
+      "role": "Marketing et Développement des Affaires"
+    },
+    "isaac": {
+      "role": "Assistant aux Opérations"
+    },
+    "stella": {
+      "role": "Agent de Terrain"
+    }
+  },
+    "MissionVisionSection": {
+      "mission": {
+        "title": "Notre Mission",
+        "description": "Notre mission est de fournir un service exceptionnel, de bâtir des relations durables et de dépasser constamment les attentes de nos clients grâce à des solutions logistiques efficaces, fiables et rentables."
+      },
+      "vision": {
+        "title": "Notre Vision",
+        "description": "Être le principal fournisseur mondial de services d'expédition et de logistique, reconnu pour un service exceptionnel, une fiabilité et une innovation constantes, tout en favorisant la croissance durable, la satisfaction des clients et l'excellence des employés."
+      }
+    }
+
+
+}
