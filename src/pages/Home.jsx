@@ -6,11 +6,9 @@ import { motion } from "framer-motion";
 import MissionVisionSection from "../components/MissionVisionSection";
 import WeImport from "../components/WeImport";
 import WhyChooseUs from "../components/WhyCooseUs";
-
+import Team from "../components/Team";
 
 export default function Home() {
-
-
   return (
     <div className="space-y-16 ">
       {/* About Section */}
@@ -56,7 +54,7 @@ export default function Home() {
       <div id="services" className="-mt-16">
         <ServicePreview />
       </div>
-<div className="-mt-16"></div>
+      <div className="-mt-16"></div>
       {/* Import Section */}
       <div className="w-full -mt-23">
         <WeImport />
@@ -65,7 +63,12 @@ export default function Home() {
       <div className="-mt-23">
         <WhyChooseUs />
       </div>
-<div className="w-full -mt-23"></div>
+      {/* Team Section */}
+      <div className="w-full -mt-23">
+        <Team />
+      </div>
+      {/* Contact Section */}
+      <div className="w-full -mt-23"></div>
       {/* Contact Section */}
       <motion.section
         id="contact"
@@ -123,7 +126,7 @@ export default function Home() {
           </form>
         </div>
       </motion.section>
-<div className="w-full -mt-23"></div>
+      <div className="w-full -mt-16"></div>
       {/* Map Section */}
       <motion.section
         id="map"
