@@ -39,17 +39,19 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center px-4 py-3">
 
         {/* Logo + Nom */}
-        <a href="#" className="flex items-center space-x-3">
+        <a href="/" className="flex items-center space-x-3">
           <img src={shippingPlanes} alt="Logo Ter Maximum" className="h-10 w-10 object-contain" />
           <span className="text-lg font-bold tracking-wide">Ter Maximum Ltd</span>
         </a>
 
         {/* Menu pour grand écran */}
         <div className="hidden md:flex space-x-6 text-sm font-medium">
-          <a href="#home" className="hover:underline">{t("navbar.home")}</a>
+          <a href="#" className="hover:underline">{t("navbar.home")}</a>
           <a href="#about" className="hover:underline">{t("navbar.about")}</a>
           <a href="#services" className="hover:underline">{t("navbar.services")}</a>
+          <a href="#team" className="hover:underline">{t("navbar.team")}</a>
           <a href="#contact" className="hover:underline">{t("navbar.contact")}</a>
+       
         </div>
 
         {/* Sélecteur de langue */}
@@ -91,6 +93,7 @@ export default function Navbar() {
           <a href="#about" className="block hover:underline">{t("navbar.about")}</a>
           <a href="#services" className="block hover:underline">{t("navbar.services")}</a>
           <a href="#contact" className="block hover:underline">{t("navbar.contact")}</a>
+          <a href="#team" className="block hover:underline">{t("navbar.Team")}</a>
         </div>
       )}
     </nav>

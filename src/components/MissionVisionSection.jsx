@@ -11,35 +11,44 @@ export default function MissionVisionSection() {
   return (
     <section
       id="mission"
-      className="relative w-full py-20 bg-gray-50 overflow-hidden"
       ref={sectionRef}
+      className="relative w-full py-24 bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden"
     >
-      {/* Background parallax zoom */}
+      {/* Halo lumineux arrière-plan */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent scale-125 blur-xl"
-        initial={{ opacity: 0, scale: 1 }}
-        animate={isInView ? { opacity: 0.3, scale: 1.05 } : {}}
-        transition={{ duration: 2, ease: "easeInOut" }}
+        className="absolute -top-20 -left-20 w-[400px] h-[400px] bg-blue-300/30 rounded-full blur-3xl animate-pulse"
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 0.4 } : {}}
+        transition={{ duration: 2 }}
+      />
+      <motion.div
+        className="absolute -bottom-20 -right-20 w-[500px] h-[500px] bg-indigo-400/20 rounded-full blur-3xl animate-ping"
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 0.3 } : {}}
+        transition={{ duration: 2 }}
       />
 
-      <div className="relative w-full px-4 md:px-8 lg:px-12 text-gray-900 text-center z-10">
-        
+      <div className="relative z-10 px-4 md:px-8 lg:px-16 text-gray-900 text-center">
+      
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Mission */}
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* MISSION */}
           <motion.div
-            className="bg-white text-gray-800 rounded-xl shadow-md p-8 group relative"
-            whileHover={{ scale: 1.03 }}
-            initial={{ opacity: 0, x: -50 }}
+            className="group relative overflow-hidden text-left p-10 rounded-[2.5rem] bg-white/80 shadow-xl border border-blue-200 backdrop-blur-lg transition-all duration-500 hover:bg-blue-50/90"
+            whileHover={{ scale: 1.05 }}
+            initial={{ opacity: 0, x: -80 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8 }}
+            style={{
+              clipPath: "polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%)",
+            }}
           >
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center mb-5">
               <motion.div
-                className="bg-blue-100 p-4 rounded-full text-blue-800 text-4xl shadow transition-transform group-hover:rotate-[360deg]"
+                className="bg-blue-100 p-5 rounded-full text-blue-800 text-4xl shadow-lg transition-transform group-hover:rotate-[360deg]"
                 animate={{
                   scale: [1, 1.1, 1],
-                  opacity: [1, 0.85, 1],
+                  rotate: [0, 15, -15, 0],
                 }}
                 transition={{
                   duration: 3,
@@ -49,26 +58,31 @@ export default function MissionVisionSection() {
                 <FaBullseye />
               </motion.div>
             </div>
-            <h3 className="text-xl font-semibold text-blue-800 mb-3">{t("MissionVisionSection.mission.title")}</h3>
-            <p className="text-justify leading-relaxed">
+            <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+              {t("MissionVisionSection.mission.title")}
+            </h3>
+            <p className="text-gray-700 text-justify leading-relaxed tracking-wide">
               {t("MissionVisionSection.mission.description")}
             </p>
           </motion.div>
 
-          {/* Vision */}
+          {/* VISION */}
           <motion.div
-            className="bg-white text-gray-800 rounded-xl shadow-md p-8 group relative"
-            whileHover={{ scale: 1.03 }}
-            initial={{ opacity: 0, x: 50 }}
+            className="group relative overflow-hidden text-left p-10 rounded-[2.5rem] bg-white/80 shadow-xl border border-indigo-200 backdrop-blur-lg transition-all duration-500 hover:bg-indigo-50/90"
+            whileHover={{ scale: 1.05 }}
+            initial={{ opacity: 0, x: 80 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.9, delay: 0.2 }}
+            style={{
+              clipPath: "polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%)",
+            }}
           >
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center mb-5">
               <motion.div
-                className="bg-blue-100 p-4 rounded-full text-blue-800 text-4xl shadow transition-transform group-hover:rotate-[360deg]"
+                className="bg-indigo-100 p-5 rounded-full text-indigo-800 text-4xl shadow-lg transition-transform group-hover:rotate-[360deg]"
                 animate={{
                   scale: [1, 1.1, 1],
-                  opacity: [1, 0.85, 1],
+                  rotate: [0, 15, -15, 0],
                 }}
                 transition={{
                   duration: 3,
@@ -78,8 +92,10 @@ export default function MissionVisionSection() {
                 <FaEye />
               </motion.div>
             </div>
-            <h3 className="text-xl font-semibold text-blue-800 mb-3">{t("MissionVisionSection.vision.title")}</h3>
-            <p className="text-justify leading-relaxed">
+            <h3 className="text-2xl font-semibold text-indigo-900 mb-4">
+              {t("MissionVisionSection.vision.title")}
+            </h3>
+            <p className="text-gray-700 text-justify leading-relaxed tracking-wide">
               {t("MissionVisionSection.vision.description")}
             </p>
           </motion.div>
